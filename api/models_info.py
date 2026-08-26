@@ -7,7 +7,7 @@ from fastapi import APIRouter
 import pathlib
 import pandas as pd
 import numpy as np
-from typing import List, Dict, Any
+from typing import Optional, List, Dict, Any
 
 from api.schemas import (
     ModelPerformanceResponse,
@@ -18,7 +18,7 @@ from api.schemas import (
 router = APIRouter(tags=["Metadata & Analytics"])
 
 # Static cache of dataset summary to guarantee instant responses (<10ms)
-CACHED_EXPLORER_STATS = None
+CACHED_EXPLORER_STATS: Optional[ExplorerStatsResponse] = None
 
 def get_cached_stats() -> ExplorerStatsResponse:
     global CACHED_EXPLORER_STATS
