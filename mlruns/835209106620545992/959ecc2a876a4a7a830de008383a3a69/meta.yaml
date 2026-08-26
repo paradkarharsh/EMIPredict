@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SF314-511-54UM/Desktop/My Projects/Labmentix/EMI Predict
+  AI/mlruns/835209106620545992/959ecc2a876a4a7a830de008383a3a69/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '835209106620545992'
+lifecycle_stage: active
+run_id: 959ecc2a876a4a7a830de008383a3a69
+run_name: Logistic_Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1787246578200
+status: 1
+tags: []
+user_id: SF314-511-54UM

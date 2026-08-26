@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SF314-511-54UM/Desktop/My Projects/Labmentix/EMI Predict
+  AI/mlruns/835209106620545992/fc2b5575c23444c89e092301cfa1ec8a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '835209106620545992'
+lifecycle_stage: active
+run_id: fc2b5575c23444c89e092301cfa1ec8a
+run_name: Decision_Tree
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1787246788503
+status: 1
+tags: []
+user_id: SF314-511-54UM

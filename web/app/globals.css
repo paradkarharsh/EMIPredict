@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Foundation - Light Mode */
+  --bg-base: #FBFBFD;
+  --bg-base-translucent: rgba(251, 251, 253, 0.82);
+  --bg-surface: #FFFFFF;
+  --bg-surface-glass: rgba(255, 255, 255, 0.75);
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-subtle: rgba(245, 245, 247, 0.75);
+  --bg-elevated: #FFFFFF;
+  --bg-hero: #0F1216;
+
+  /* Text Colors */
+  --text-primary: #1D1D1F;
+  --text-secondary: #6E6E73;
+  --text-tertiary: #86868B;
+  --text-on-dark: #F5F5F7;
+  --text-on-dark-muted: #A1A1A6;
+
+  /* Brand Accent - FinTech Muted Teal-Blue */
+  --color-accent: #0A5C6B;
+  --color-accent-hover: #084B57;
+  --color-accent-subtle: rgba(10, 92, 107, 0.08);
+  --color-accent-border: rgba(10, 92, 107, 0.25);
+  --color-accent-glow: rgba(10, 92, 107, 0.16);
+
+  /* Status Colors - Apple Desaturated Tones */
+  --status-success: #28A745;
+  --status-success-bg: rgba(40, 167, 69, 0.08);
+  --status-success-border: rgba(40, 167, 69, 0.25);
+
+  --status-warning: #D97706;
+  --status-warning-bg: rgba(217, 119, 6, 0.08);
+  --status-warning-border: rgba(217, 119, 6, 0.25);
+
+  --status-danger: #DC2626;
+  --status-danger-bg: rgba(220, 38, 38, 0.08);
+  --status-danger-border: rgba(220, 38, 38, 0.25);
+
+  /* Hairlines & Borders */
+  --border-hairline: rgba(0, 0, 0, 0.08);
+  --border-subtle: rgba(0, 0, 0, 0.04);
+  --border-focus: rgba(10, 92, 107, 0.45);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-card-hover: 0 12px 36px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-nav: 0 1px 0 rgba(0, 0, 0, 0.06), 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.dark {
+  /* Foundation - Dark Mode */
+  --bg-base: #0A0A0C;
+  --bg-base-translucent: rgba(10, 10, 12, 0.82);
+  --bg-surface: #141418;
+  --bg-surface-glass: rgba(20, 20, 24, 0.75);
+  --bg-card: rgba(24, 24, 28, 0.85);
+  --bg-card-subtle: rgba(32, 32, 38, 0.75);
+  --bg-elevated: #1E1E24;
+  --bg-hero: #050608;
+
+  /* Text Colors */
+  --text-primary: #F5F5F7;
+  --text-secondary: #98989D;
+  --text-tertiary: #6E6E73;
+  --text-on-dark: #F5F5F7;
+  --text-on-dark-muted: #86868B;
+
+  /* Brand Accent */
+  --color-accent: #2DD4BF;
+  --color-accent-hover: #14B8A6;
+  --color-accent-subtle: rgba(45, 212, 191, 0.12);
+  --color-accent-border: rgba(45, 212, 191, 0.3);
+  --color-accent-glow: rgba(45, 212, 191, 0.2);
+
+  /* Hairlines & Borders */
+  --border-hairline: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  --border-focus: rgba(45, 212, 191, 0.5);
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 16px 48px rgba(0, 0, 0, 0.6), 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-nav: 0 1px 0 rgba(255, 255, 255, 0.06), 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-base);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tabular Numerals for numbers, currencies, metrics */
+.tabular-nums {
+  font-feature-settings: "tnum" 1, "ss01" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glass Panels */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--border-hairline);
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-accent-border);
+}
+
+/* Form Inputs */
+.apple-input {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 12px;
+  padding: 0.65rem 0.95rem;
+  font-size: 14.5px;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+}
+
+.apple-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-subtle);
+}
+
+/* Primary Button */
+.apple-button-primary {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 980px;
+  padding: 0.75rem 1.75rem;
+  font-size: 14.5px;
+  font-weight: 550;
+  letter-spacing: -0.01em;
+  box-shadow: 0 2px 8px var(--color-accent-glow), 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.dark .apple-button-primary {
+  color: #0A0A0C;
+}
+
+.apple-button-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px var(--color-accent-glow), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.apple-button-primary:active {
+  transform: scale(0.98);
+}
+
+/* Secondary Button */
+.apple-button-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-hairline);
+  border-radius: 980px;
+  padding: 0.75rem 1.5rem;
+  font-size: 14.5px;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.apple-button-secondary:hover {
+  background-color: var(--color-accent-subtle);
+  transform: scale(1.02);
+  border-color: var(--color-accent-border);
+}
+
+.apple-button-secondary:active {
+  transform: scale(0.98);
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

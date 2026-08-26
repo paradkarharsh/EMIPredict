@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SF314-511-54UM/Desktop/My Projects/Labmentix/EMI Predict
+  AI/mlruns/835209106620545992/af38484783944ddba484520fbe86dc40/artifacts
+end_time: 1787246973120
+entry_point_name: ''
+experiment_id: '835209106620545992'
+lifecycle_stage: active
+run_id: af38484783944ddba484520fbe86dc40
+run_name: Random_Forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1787246967783
+status: 3
+tags: []
+user_id: SF314-511-54UM

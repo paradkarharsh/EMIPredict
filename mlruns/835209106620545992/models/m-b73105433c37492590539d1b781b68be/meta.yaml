@@ -1,0 +1,11 @@
+artifact_location: file:///C:/Users/SF314-511-54UM/Desktop/My Projects/Labmentix/EMI
+  Predict AI/mlruns/835209106620545992/models/m-b73105433c37492590539d1b781b68be/artifacts
+creation_timestamp: 1787246840442
+experiment_id: '835209106620545992'
+last_updated_timestamp: 1787246896948
+model_id: m-b73105433c37492590539d1b781b68be
+model_type: null
+name: model
+source_run_id: a8dff441447d4364b9e1cc389136b7c6
+status: 2
+status_message: null

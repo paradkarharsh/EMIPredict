@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/SF314-511-54UM/Desktop/My Projects/Labmentix/EMI
+  Predict AI/mlruns/451034389931100213
+creation_time: 1787294059649
+effective_trace_archival_retention: null
+experiment_id: '451034389931100213'
+last_update_time: 1787294059649
+lifecycle_stage: active
+name: EMIPredict_Regression
+trace_location: null
+workspace: default
