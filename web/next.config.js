@@ -2,13 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
+    const backendUrl =
+      process.env.NEXT_PUBLIC_API_URL || "https://emipredict-api.onrender.com";
     return [
       {
-        source: "/api/:path*",
-        destination: "http://127.0.0.1:8000/:path*",
+        source: "/backend-api/:path*",
+        destination: `${backendUrl}/:path*`,
       },
     ];
   },
 };
 
 module.exports = nextConfig;
+
