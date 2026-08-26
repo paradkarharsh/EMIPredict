@@ -1,0 +1,23 @@
+services:
+  # 1. FastAPI Machine Learning Backend Service
+  - type: web
+    name: emipredict-api
+    runtime: python
+    buildCommand: pip install -r api/requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+
+  # 2. Next.js 14 Production Frontend Service
+  - type: web
+    name: emipredict-web
+    runtime: node
+    rootDir: web
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
