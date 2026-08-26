@@ -8,7 +8,6 @@ import sys
 import pathlib
 import joblib
 import pandas as pd
-import numpy as np
 import plotly.graph_objects as go
 
 sys.path.append(str(pathlib.Path(__file__).parent.parent.parent))

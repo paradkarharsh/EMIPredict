@@ -2,24 +2,35 @@
   "include": [
     "api",
     "app",
-    "src",
-    "main.py"
+    "src"
   ],
   "exclude": [
     "**/node_modules",
     "**/__pycache__",
-    ".venv"
+    ".venv",
+    "web"
   ],
   "venvPath": ".",
   "venv": ".venv",
-  "pythonVersion": "3.11",
+  "pythonVersion": "3.13",
   "pythonPlatform": "Windows",
   "extraPaths": [
     ".",
     "api",
-    "src"
+    "src",
+    "app"
   ],
   "typeCheckingMode": "off",
   "reportMissingImports": "none",
-  "reportMissingModuleSource": "none"
+  "reportMissingModuleSource": "none",
+  "reportUnusedImport": "none",
+  "reportUnusedVariable": "none",
+  "reportGeneralTypeIssues": "none",
+  "reportOptionalMemberAccess": "none",
+  "reportOptionalSubscript": "none",
+  "reportPrivateImportUsage": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownArgumentType": "none",
+  "reportAttributeAccessIssue": "none"
 }

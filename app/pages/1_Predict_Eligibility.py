@@ -8,7 +8,6 @@ import sys
 import pathlib
 import joblib
 import pandas as pd
-import numpy as np
 import plotly.express as px
 
 # Ensure project root is in sys.path

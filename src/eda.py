@@ -4,10 +4,8 @@ Generates publication-quality charts saved in reports/figures/ and populates
 reports/eda_report.md with detailed financial risk insights.
 """
 
-import os
 import pathlib
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 

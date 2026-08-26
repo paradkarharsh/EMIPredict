@@ -3,7 +3,7 @@ Prediction Router for EMIPredict AI.
 Handles Classification (Eligibility) and Regression (Max Safe EMI) endpoints.
 """
 
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, List

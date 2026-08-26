@@ -1,15 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { motion } from "framer-motion";
-import {
-  Database,
-  Filter,
-  PieChart as PieIcon,
-  ScatterChart as ScatterIcon,
-  BarChart3,
-  Sliders,
-} from "lucide-react";
+import { Database, Filter } from "lucide-react";
 import {
   ResponsiveContainer,
   BarChart,

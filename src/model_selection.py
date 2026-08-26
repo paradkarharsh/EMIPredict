@@ -11,12 +11,9 @@ import sys
 import pathlib
 import joblib
 import pandas as pd
-import numpy as np
 
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
-
-from src.feature_engineering import FinancialFeatureAdder
 
 import mlflow
 from mlflow.tracking import MlflowClient

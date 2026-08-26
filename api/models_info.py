@@ -6,8 +6,7 @@ Serves benchmark comparison metrics, MLflow leaderboards, and dataset explorer a
 from fastapi import APIRouter
 import pathlib
 import pandas as pd
-import numpy as np
-from typing import Optional, List, Dict, Any
+from typing import Optional, Dict, Any, List
 
 from api.schemas import (
     ModelPerformanceResponse,
@@ -42,7 +41,7 @@ def get_cached_stats() -> ExplorerStatsResponse:
         scatter_sample = sample_df.to_dict(orient="records")
 
         # Credit score box stats per tier
-        credit_box = {}
+        credit_box: Dict[str, Dict[str, float]] = {}
         for tier in ["Eligible", "High_Risk", "Not_Eligible"]:
             subset = df[df["emi_eligibility"] == tier]["credit_score"].dropna()
             if len(subset) > 0:

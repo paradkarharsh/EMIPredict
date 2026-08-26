@@ -8,24 +8,17 @@ and confusion matrix artifacts to MLflow experiment 'EMIPredict_Classification'.
 import os
 import sys
 import pathlib
-import json
 import joblib
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
 
-from src.feature_engineering import FinancialFeatureAdder
-
 import mlflow
-import mlflow.sklearn
-import mlflow.xgboost
 
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier, HistGradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
 

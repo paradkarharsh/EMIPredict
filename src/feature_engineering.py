@@ -5,7 +5,6 @@ composite risk score, and interaction terms. Handles categorical encoding & nume
 Persists fitted preprocessor pipeline to models/preprocessor.pkl.
 """
 
-import os
 import sys
 import pathlib
 import joblib

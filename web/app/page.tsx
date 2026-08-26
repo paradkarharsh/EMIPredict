@@ -1,20 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ShieldCheck,
-  TrendingUp,
-  Sliders,
-  Database,
-  Layers,
-  ArrowRight,
-  Sparkles,
-  CheckCircle2,
-  Cpu,
-  HelpCircle,
-} from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { CountUpNumber } from "@/components/CountUpNumber";
 
 const EASE_OUT_EXPO = [0.16, 1, 0.3, 1];

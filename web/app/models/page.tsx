@@ -1,17 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { motion } from "framer-motion";
-import {
-  Cpu,
-  Trophy,
-  CheckCircle2,
-  BarChart3,
-  TrendingDown,
-  Layers,
-  Sparkles,
-  ShieldAlert,
-} from "lucide-react";
+import { Cpu, CheckCircle2 } from "lucide-react";
 import {
   ResponsiveContainer,
   BarChart,

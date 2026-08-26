@@ -9,7 +9,6 @@ import os
 import pathlib
 import pandas as pd
 import plotly.express as px
-from PIL import Image
 
 os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
 

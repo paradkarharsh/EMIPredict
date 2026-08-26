@@ -6,7 +6,6 @@ FinTech Capstone Project: Intelligent Financial Risk Assessment Platform.
 import streamlit as st
 import sys
 import pathlib
-import pandas as pd
 
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 from src.feature_engineering import FinancialFeatureAdder

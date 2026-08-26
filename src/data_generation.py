@@ -4,7 +4,6 @@ Generates 400,000 records across 5 loan EMI scenarios with 22 features and 2 tar
 Includes realistic missing values, duplicates, and financial outliers.
 """
 
-import os
 import pathlib
 import numpy as np
 import pandas as pd

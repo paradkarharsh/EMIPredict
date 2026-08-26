@@ -15,11 +15,7 @@ import pandas as pd
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
 
-from src.feature_engineering import FinancialFeatureAdder
-
 import mlflow
-import mlflow.sklearn
-import mlflow.xgboost
 
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor

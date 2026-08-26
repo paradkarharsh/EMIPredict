@@ -3,7 +3,7 @@ Pydantic Schemas for EMIPredict AI API.
 Defines input payloads and response formats for inference, metrics, and dataset stats.
 """
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from typing import Dict, List, Optional, Any
 
 
@@ -44,8 +44,8 @@ class LoanApplicationInput(BaseModel):
     requested_amount: float = Field(..., ge=1000, description="Requested principal loan amount in INR")
     requested_tenure: int = Field(..., ge=1, le=120, description="Requested loan tenure in months")
 
-    class Config:
-        json_schema_extra = {
+    model_config = ConfigDict(
+        json_schema_extra={
             "example": {
                 "age": 32,
                 "gender": "Male",
@@ -74,6 +74,7 @@ class LoanApplicationInput(BaseModel):
                 "requested_tenure": 24
             }
         }
+    )
 
 
 class FinancialRatios(BaseModel):
